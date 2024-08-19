@@ -1,0 +1,23 @@
+.container {
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .input {
+    border: 1px solid black;
+    padding: 0.5rem;
+    margin-right: 1rem;
+  }
+  
+  .button {
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
