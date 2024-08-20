@@ -13,7 +13,7 @@ const authReducer = (state, action) => {
             return state;
     }
 }
-
+  
 const AuthContextProvider = ({ children }) => {
     const [state, dispatch] = useReducer(authReducer, { user: null });
     const [loading, setLoading] = useState(true);
