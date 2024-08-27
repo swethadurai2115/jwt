@@ -1,0 +1,31 @@
+/* src/components/UserDetails.css */
+
+.UserDetails {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .UserDetails h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .UserDetails table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .UserDetails th, .UserDetails td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .UserDetails th {
+    background-color: #f4f4f4;
+  }
+  
