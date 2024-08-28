@@ -1,13 +1,11 @@
-// src/components/UserDetails.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './UserDetails.css'; // Import CSS for styling
+import './UserDetails.css';
 
 const UserDetails = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    // Fetch the list of users from the backend
     const fetchUsers = async () => {
       try {
         const response = await axios.get('http://localhost:5000/users'); // Adjust the endpoint as needed

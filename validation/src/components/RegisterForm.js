@@ -2,8 +2,8 @@ import React from 'react';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
-import './RegisterForm.css'; // Import the CSS file
+import { useNavigate } from 'react-router-dom';
+import './RegisterForm.css'; 
 
 const validationSchema = Yup.object({
   username: Yup.string().min(3, 'Username must be at least 3 characters').required('Username is required'),
@@ -12,7 +12,7 @@ const validationSchema = Yup.object({
 });
 
 const RegisterForm = () => {
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate(); 
 
   return (
     <div className="RegisterForm">
@@ -24,7 +24,7 @@ const RegisterForm = () => {
           try {
             await axios.post('http://localhost:5000/register', values);
             setStatus({ success: 'Registration successful!' });
-            navigate('/user-details'); // Navigate to UserDetails page
+            navigate('/user-details'); 
           } catch (error) {
             setErrors({ api: error.response.data.errors || ['Server error'] });
           }
